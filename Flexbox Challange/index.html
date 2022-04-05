@@ -19,19 +19,46 @@
         background-color: #ccc;
         font-size: 3rem;
       }
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+      }
       article {
-        font-size: 2rem;
+        font-size: 1rem;
         background-color: aqua;
+        flex: 1;
+        order: 2;
+      }
+      .side-left {
+        order: 1;
+      }
+      .side-right {
+        order: 3;
+      }
+      aside {
+        padding-right: 40px;
+        background-color: yellow;
       }
       footer {
         background-color: #ccc;
-        font-size: 2rem;
+        font-size: 1rem;
+      }
+
+      @media (max-width: 480px) {
+        .flex-container {
+          flex-direction: column;
+        }
+        aside {
+          height: 40px;
+          background-color: yellow;
+        }
       }
     </style>
   </head>
   <body>
     <header>Header</header>
-    <main>
+    <main class="flex-container">
       <article class="main">Main</article>
       <aside class="side-left">Sidebar 1</aside>
       <aside class="side-right">Sidebar 2</aside>
