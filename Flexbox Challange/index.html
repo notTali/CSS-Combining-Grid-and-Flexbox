@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Flexbox Challange</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        background-color: #ccc;
+        font-size: 3rem;
+      }
+      article {
+        font-size: 2rem;
+        background-color: aqua;
+      }
+      footer {
+        background-color: #ccc;
+        font-size: 2rem;
+      }
+    </style>
   </head>
   <body>
-
+    <header>Header</header>
+    <main>
+      <article class="main">Main</article>
+      <aside class="side-left">Sidebar 1</aside>
+      <aside class="side-right">Sidebar 2</aside>
+    </main>
+    <footer>Footer</footer>
   </body>
 </html>
