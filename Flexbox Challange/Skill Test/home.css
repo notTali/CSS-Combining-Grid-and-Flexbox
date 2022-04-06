@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    background-color: #ccc;
+    font-size: 3rem;
+    order: 1;
+}
+.flex-container{
+    font-size: 3rem;
+    display: flex;
+    order: 2;
+    flex-direction: row;
+    flex: 1;
+}
+
+.Sideba1{
+    background-color: yellow;
+    order: 1;
+}
+
+.main{
+    flex: 1;
+    order: 2;
+    background-color: aqua;
+}
+
+.Sidebar2{
+    background-color: yellow;
+    order: 3;
+}
+
+@media (max-width: 600px) {
+    .flex-container{
+        flex-direction: column;
+    }
+}
+
+footer{
+    background-color: #ccc;
+    font-size: 2rem;
+    order: 3;
+}
