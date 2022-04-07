@@ -6,6 +6,7 @@
 }
 
 .container{
+    position: relative;
     height: 100vh;
     display: grid;
     width: 90%;
@@ -17,6 +18,9 @@ header{
     padding-left: 10px;
     background-color: #ccc;
     font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
 }
 
 nav{
@@ -28,22 +32,24 @@ nav{
 .content{
     font-size: 2.5rem;
     display:flex;
-    height: 80vh;
+    height: 70vh;
 
 }
 
 .content > div{
+    flex: 1;
+    background-color: #ccc;
     padding-left: 10px;
 }
 
-.content .Sidebar1{
+/* .content .Sidebar1{
     flex: 1;
     background-color: #ccc;
 }
 .content .Sidebar2{
     flex: 2;
     background-color: #ccc;
-}
+} */
 
 footer{
     padding-left: 10px;
@@ -55,7 +61,7 @@ footer{
 @media (max-width:950px) {
     .content{
         display:flex;
-        height: 80vh;
+        height: minmax(400px, auto);
         flex-direction: column;
     }
 }
